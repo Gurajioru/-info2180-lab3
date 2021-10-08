@@ -12,7 +12,13 @@ window.onload = function(){
             element.classList.remove('hover');
         })
         console.log("add");
+
+        element.addEventListener('click',handleClick, {once: true})
     });
+}
+
+function handleClick(e){
+    console.log("clicked");
 }
 
 
