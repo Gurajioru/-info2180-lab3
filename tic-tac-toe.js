@@ -17,18 +17,31 @@ window.onload = function(){
     });
 }
 
+var circleTurn=true;
+
 function handleClick(e){
     console.log("clicked");
+    var cell = e.target;
+    swapTurn();
+    if (circleTurn==false){
+        cell.classList.add('X');
+        cell.textContent="X";
+    }else if (circleTurn==true){
+        cell.classList.add('O');
+        cell.textContent="O";
+    }
+
+
+    //swapTurn();
+   // cell.textContent="X";
+    
+}
+
+function swapTurn(){
+    circleTurn=!circleTurn;
 }
 
 
 
-//var hoverArray=document.getElementById('board').childNodes;
-//console.log(hoverArray);
-//hoverArray.forEach(element=> {
-//    element.addEventListener('mouseover',function(event){
- //       element.className += "hover";
-   //     console.log("hovering");
-    //})
-//})
+
 
