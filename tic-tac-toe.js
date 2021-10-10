@@ -23,6 +23,15 @@ window.onload = function(){
     newGame.addEventListener('click',function(event){
         console.log("reset clicked");
         window.location.reload();
+        /*newCond=document.getElementById('status');
+        newCond.classList.remove('you-won');
+        newCond.textContent="Move your mouse over a square and click to play an X or an O."
+        resetNodes=document.getElementByClassName('square');
+        resetNodes.forEach(element=>{
+            element.textContent="";
+            element.classList.remove('X');
+            element.classList.remove('Y');
+        })*/
     });
 }
 
