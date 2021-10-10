@@ -143,9 +143,11 @@ function checkWin(){
     }
     
     if (cond=="Congratulations! X is the Winner!" || cond=="Congratulations! O is the Winner!"){
-        cond.textContent.readOnly=true;
+        cond.readonly=true;
+       squareList.forEach(element => {
+           element.textContent.readonly=true;
+       })
     }
 }
-
 
 
